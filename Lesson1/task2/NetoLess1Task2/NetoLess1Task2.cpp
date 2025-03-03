@@ -6,7 +6,7 @@
 struct Person {
     int number{};
     std::string name{};
-    float balance{};
+    double balance{};
 };
 void updateBalance(Person& personOne, double newBalance) {
     personOne.balance = newBalance;
