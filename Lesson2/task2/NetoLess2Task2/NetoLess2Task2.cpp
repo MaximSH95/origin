@@ -8,10 +8,6 @@ class Counter {
 
     public:
         Counter(int set_num = 1 ) : num{ set_num } {}
-        void setNum(int set_num) {
-            num = set_num;
-        }
-
         int add() {
             return ++num;
         }
@@ -30,56 +26,36 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Counter counter;
-
+    Counter* counter = nullptr;
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::string start;
     std::getline(std::cin >> std::ws, start);
-    char ch ;
 
     if (start == "да") {
         std::cout << "Введите начальное значение счетчика: ";
         int init_num;
         std::cin >> init_num;
-        counter.setNum(init_num);
-        while (true) {
-            std::cout << "Введите команду ('+' , '-', '=', или 'x'): ";
-            std::cin >> ch;
-            if (ch == '+') {
-                counter.add();
-            }
-            if (ch == '-') {
-                counter.subtract();
-            }
-            if (ch == '=') {
-                std::cout << counter.sol() << std::endl;
-            }
-            if (ch == 'x') {
-                std::cout << "До свидания!" << std::endl;
-                break;
-            }
-        }
-    }
-    if (start == "нет") {
-        std::cout << "Счетчик по умолчанию 1" << std::endl;
-        while (true) {
-            std::cout << "Введите команду ('+' , '-', '=', или 'x'): ";
-            std::cin >> ch;
-            if (ch == '+') {
-                counter.add();
-            }
-            if (ch == '-') {
-                counter.subtract();
-            }
-            if (ch == '=') {
-                std::cout << counter.sol() << std::endl;
-            }
-            if (ch == 'x') {
-                std::cout << "До свидания!" << std::endl;
-                break;
-            }
-        }
+        counter = new Counter(init_num);
+    } else {
+        counter = new Counter();
+        std::cout << "Значение по умолчанию 1: " <<std::endl;
     }
 
+    char ch;
+    
+    do {
+        std::cout << "Введите команду ('+' , '-', '=', или 'x'): ";
+        std::cin >> ch;
+        if (ch == '+') {
+            counter->add();
+        } else if (ch == '-') {
+            counter->subtract();
+        } else if (ch == '=') {
+            std::cout << counter->sol() << std::endl;
+        } else if (ch == 'x') {
+            std::cout << "До свидания!" << std::endl;
+            break;
+        }
+    } while (true);
     return 0;
 }
