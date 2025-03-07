@@ -50,7 +50,7 @@ int main()
 
     for (int i = 0; i < count - 1; ++i) {
         for (int j = 0; j < count - i - 1; ++j) {
-            if (address[j].sort_city() < address[j + 1].sort_city()); {
+            if (address[j].sort_city() < address[j + 1].sort_city()) {
                 swapAddress(address[j], address[j + 1]);
             }
         }
