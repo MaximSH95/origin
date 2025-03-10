@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <string>
-#include <Windows.h>
 #include <fstream>
 
 class Address {
@@ -16,24 +15,10 @@ public:
     std::string get_output_address() {
         return city + " , " + street + " , " + std::to_string(numH) + " , " + std::to_string(numA);
     }
-
-    std::string sort_city() {
-        return city;
-    }
 };
-    void swapAddress(Address& a, Address& b) {
-    Address temp = a;
-    a = b;
-    b = temp;
-    }
 
 int main()
 {
-    setlocale(LC_ALL, "RU");
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-
-    
     std::ifstream read("in.txt");
     int count;
     read >> count;
@@ -42,23 +27,18 @@ int main()
     {
         for (int i = 0; i < count; ++i) {
             std::string city, street;
-            int numH , numA;
+            int numH, numA;
             read >> city >> street >> numH >> numA;
             address[i] = Address(city, street, numH, numA);
         }
-    }else { std::cout << "Не удалось открыть файл" << std::endl; }
-
-    for (int i = 0; i < count - 1; ++i) {
-        for (int j = 0; j < count - i - 1; ++j) {
-            if (address[j].sort_city() < address[j + 1].sort_city()) {
-                swapAddress(address[j], address[j + 1]);
-            }
-        }
     }
+    else { std::cout << "Не удалось открыть файл" << std::endl; }
+
+   
 
     std::ofstream record("out.txt");
-    record << count <<std::endl;
-    for (int i = 0; i < count; ++i) {
+    record << count << std::endl;
+    for (int i = count - 1; i >= 0; --i) {
         record << address[i].get_output_address() << std::endl;
     }
 
