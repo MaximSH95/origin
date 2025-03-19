@@ -9,7 +9,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Counter counter(0);
+    Counter* counter = nullptr;
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::string start;
     std::getline(std::cin >> std::ws, start);
@@ -31,13 +31,13 @@ int main()
         std::cout << "Введите команду ('+' , '-', '=', или 'x'): ";
         std::cin >> ch;
         if (ch == '+') {
-            counter.add();
+            counter->add();
         }
         else if (ch == '-') {
-            counter.subtract();
+            counter->subtract();
         }
         else if (ch == '=') {
-            std::cout << counter.sol() << std::endl;
+            std::cout << counter->sol() << std::endl;
         }
         else if (ch == 'x') {
             std::cout << "До свидания!" << std::endl;
