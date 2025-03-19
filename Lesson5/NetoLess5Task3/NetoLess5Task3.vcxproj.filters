@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\Figure">
+      <UniqueIdentifier>{00385343-3152-469c-b63e-278d58129def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Triangle">
+      <UniqueIdentifier>{0cdc961c-6ab5-4d41-acd6-dcd5aed29a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\RightTriangle">
+      <UniqueIdentifier>{f349f504-2afd-4835-849b-b7cee95596ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\IsoscelesTriangle">
+      <UniqueIdentifier>{be129783-d332-4688-af90-e245bf3bcf12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\EquilateralTriangle">
+      <UniqueIdentifier>{76f1dfe8-d33a-4dbc-bad7-fffc7e8531be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Quadrilateral">
+      <UniqueIdentifier>{11039159-df1d-4648-80a1-80073a9fb915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Rectangle">
+      <UniqueIdentifier>{afdcf375-f974-4cc6-b2b9-6702e1587e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Square">
+      <UniqueIdentifier>{8072a0d5-80e4-42a1-84c4-8b4e30955a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Parallelogram">
+      <UniqueIdentifier>{7ed7add7-1d49-45ea-b489-940f8ac73851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Rhombus">
+      <UniqueIdentifier>{8cfa1d38-581a-40ae-8565-caad1db800b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetoLess5Task3.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
+      <Filter>Файлы заголовков\Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Файлы заголовков\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="RightTriangle.cpp">
+      <Filter>Файлы заголовков\RightTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="IsoscelesTriangle.cpp">
+      <Filter>Файлы заголовков\IsoscelesTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="EquilateralTriangle.cpp">
+      <Filter>Файлы заголовков\EquilateralTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Quadrilateral.cpp">
+      <Filter>Файлы заголовков\Quadrilateral</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Файлы заголовков\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Square .cpp">
+      <Filter>Файлы заголовков\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Parallelogram.cpp">
+      <Filter>Файлы заголовков\Parallelogram</Filter>
+    </ClCompile>
+    <ClCompile Include="Rhombus.cpp">
+      <Filter>Файлы заголовков\Rhombus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Figure.h">
+      <Filter>Файлы заголовков\Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Файлы заголовков\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="RightTriangle.h">
+      <Filter>Файлы заголовков\RightTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="IsoscelesTriangle.h">
+      <Filter>Файлы заголовков\IsoscelesTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="EquilateralTriangle.h">
+      <Filter>Файлы заголовков\EquilateralTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Quadrilateral.h">
+      <Filter>Файлы заголовков\Quadrilateral</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Файлы заголовков\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Square .h">
+      <Filter>Файлы заголовков\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallelogram.h">
+      <Filter>Файлы заголовков\Parallelogram</Filter>
+    </ClInclude>
+    <ClInclude Include="Rhombus.h">
+      <Filter>Файлы заголовков\Rhombus</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
